@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+   
+    <script src="https://kit.fontawesome.com/c135605d37.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <section class="projrct">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="prjocet-gallery">
+                        <div class="project-menu">
+                            <button filter-name="*"  class="btn btn-sm btn-primary">All</button>
+                            <button filter-name=".mf" class=" btn btn-sm btn-primary">Men</button>
+                            <button filter-name=".wf" class="btn btn-sm btn-primary">Women</button>
+                            <button filter-name=".bf" class="btn btn-sm btn-primary">Baby</button>
+                            <button filter-name=".bb" class="btn btn-sm btn-primary">Bazar</button>
+                        </div>
+                        <hr>
+                        <div class="project-item d-flex flex-row flex-wrap justify-content-start">
+                            <div class="bb card p-item">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="./assets/img/apples.jpg">
+                                </div>
+                            </div>
+                            <div class="bb card p-item" >
+                                <div class="card-body">
+                                    <img class="card-img-top" src="./assets/img/apples.jpg">
+                                </div>
+                            </div>
+                            <div class="mf card p-item">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="./assets/img/man.jfif">
+                                </div>
+                            </div>
+                            <div class="wf card p-item">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="./assets/img/woman.jpg">
+                                </div>
+                            </div>
+                            <div class="bb card p-item">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="./assets/img/apples.jpg">
+                                </div>
+                            </div>
+                            <div class="wf card p-item">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="./assets/img/woman.jpg">
+                                </div>
+                            </div>
+                            <div class="bb card p-item">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="./assets/img/apples.jpg">
+                                </div>
+                            </div>
+                            <div class="bf card p-item">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="./assets/img/baby.jpg">
+                                </div>
+                            </div>
+                            <div class="mf card p-item">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="./assets/img/man.jfif">
+                                </div>
+                            </div>
+                            <div class="wf card p-item">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="./assets/img/woman.jpg">
+                                </div>
+                            </div>
+                            <div class="bf card p-item">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="./assets/img/baby.jpg">
+                                </div>
+                            </div>
+                            <div class="bb card p-item">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="./assets/img/apples.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+<script src ="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/mixitup.min.js"></script>
+<script src="./assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+    
+    let isoo =$('.project-item').isotope({
+       itemSelector : '.p-item',
+       layoutMode : 'fitRows',   
+   });
+     $('.project-menu button').click(function(){
+
+        let filter_var = $(this).attr('filter-name');
+         isoo.isotope({
+             filter : filter_var
+         });
+     });
+
+    
+    
+
+   
+</script>
+</body>
+</html>

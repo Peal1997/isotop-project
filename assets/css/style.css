@@ -1,0 +1,99 @@
+*:focus{
+  outline: 0px;
+}
+.our-slider{
+
+width: 100%;
+height: 650px;
+
+}
+.our-slider img{
+  width: 100%;
+  height: 650px;
+
+
+}
+.slider{
+  position: relative;
+}
+.slider .owl-nav{
+font-size: 150px;
+color: #fff;
+
+
+}
+.slider .owl-nav .owl-prev{
+  position: absolute;
+  top: 0px;
+  bottom: 30px;
+  left: 0px;
+  margin: auto;
+  transition: .4s;
+
+}
+.slider:hover .owl-nav .owl-prev{
+  
+  transform: translate(30px , 0px);
+}
+.slider .owl-nav .owl-next{
+  position: absolute;
+  top: 0px;
+  bottom: 30px;
+  right: 0px;
+  margin: auto;
+  transition: .4s;
+
+}
+.slider:hover .owl-nav .owl-next{
+  
+  transform: translate(-30px , 0px);
+}
+.slider .owl-dots {
+
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   margin: auto;
+   display: block;
+   text-align: center;
+
+}
+.slider .owl-dots .owl-dot{
+   width: 30px;
+   height: 30px;
+   background-color: transparent;
+   margin: 5px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: .4;
+}
+.slider .owl-dots .owl-dot.active{
+  background-color: white;
+    
+}
+.testi-slider p{
+  font-size: 50px;
+  text-align: center;
+
+}
+.testi-slider img{
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+
+}
+.testi-slider h4{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+.our-client img{
+
+   width: 150px;
+   height: 150px;
+   
+}
+
